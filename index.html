@@ -40,6 +40,7 @@
       ul.records .venue { color: var(--muted); font-size: 13px; }
       ul.records a { color: inherit; text-decoration: none; }
       ul.records a:hover { text-decoration: underline; }
+      .empty { color: var(--muted); }
       footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; }
     </style>
   </head>
@@ -52,18 +53,8 @@
 
       <main>
         <!-- 記録はここに新しいものから順に足す。書式：日付／劇団名「作品名」／会場 -->
-        <ul class="records">
-          <li>
-            <time datetime="2026-11-21">2026-11-21</time>
-            <a href="#">悦楽歌謡シアター「高円寺心中 第三回」</a>
-            <span class="venue">MOON STOMP</span>
-          </li>
-          <li>
-            <time datetime="2026-11-18">2026-11-18</time>
-            <a href="#">劇団ドラハ「逆光より」</a>
-            <span class="venue">荻窪小劇場</span>
-          </li>
-        </ul>
+        <ul class="records"></ul>
+        <p class="empty">記録はまだありません。</p>
       </main>
 
       <footer>TheaterGoing</footer>
