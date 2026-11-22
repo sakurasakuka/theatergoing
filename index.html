@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="TheaterGoing ― 観劇の記録" />
+    <title>TheaterGoing ― 観劇の記録</title>
+    <style>
+      :root {
+        --ink: #222;
+        --muted: #777;
+        --line: #ddd;
+        --bg: #fff;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --ink: #e8e8e8;
+          --muted: #999;
+          --line: #3a3a3a;
+          --bg: #141414;
+        }
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--ink);
+        font-family: sans-serif;
+        font-size: 15px;
+        line-height: 1.9;
+      }
+      .wrap { max-width: 640px; margin: 0 auto; padding: 40px 20px 56px; }
+      header h1 { font-size: 22px; font-weight: 600; margin: 0; }
+      header p { margin: 2px 0 0; color: var(--muted); font-size: 13.5px; }
+      main { margin-top: 36px; }
+      ul.records { list-style: none; margin: 0; padding: 0; }
+      ul.records li { padding: 10px 0; border-bottom: 1px solid var(--line); }
+      ul.records time { color: var(--muted); font-size: 13px; margin-right: 12px; }
+      ul.records .venue { color: var(--muted); font-size: 13px; }
+      ul.records a { color: inherit; text-decoration: none; }
+      ul.records a:hover { text-decoration: underline; }
+      footer { margin-top: 48px; color: var(--muted); font-size: 12.5px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <h1>TheaterGoing</h1>
+        <p>観劇の記録</p>
+      </header>
+
+      <main>
+        <!-- 記録はここに新しいものから順に足す。書式：日付／劇団名「作品名」／会場 -->
+        <ul class="records">
+          <li>
+            <time datetime="2026-11-21">2026-11-21</time>
+            <a href="#">悦楽歌謡シアター「高円寺心中 第三回」</a>
+            <span class="venue">MOON STOMP</span>
+          </li>
+          <li>
+            <time datetime="2026-11-18">2026-11-18</time>
+            <a href="#">劇団ドラハ「逆光より」</a>
+            <span class="venue">荻窪小劇場</span>
+          </li>
+        </ul>
+      </main>
+
+      <footer>TheaterGoing</footer>
+    </div>
+  </body>
+</html>
